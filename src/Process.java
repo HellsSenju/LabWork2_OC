@@ -10,8 +10,8 @@ public class Process {
         Name = "Process №" + number;
         Random rnd = new Random();
         int time;
-        for(int i = 0; i < rnd.nextInt(2,10); i++){
-            time = rnd.nextInt(1,8) * 10;
+        for(int i = 0; i < rnd.nextInt(2,5); i++){
+            time = rnd.nextInt(1,7) * 10;
             Time += time;
             listThreads.add(new Thread(i + 1,time));
         }
